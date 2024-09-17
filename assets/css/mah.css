@@ -1,0 +1,513 @@
+.mah-pointer {
+  cursor: pointer;
+}
+
+.mah-wr {
+  position: relative;
+  cursor: pointer;
+  width: 100%;
+}
+.mah-wr span {
+  width: 100%;
+  display: block;
+}
+.mah-wr span:hover {
+  color: red;
+}
+
+.mah-list-wr {
+  position: absolute;
+  background-color: #333;
+  right: calc(-80% - 1rem);
+  bottom: calc(100% - 2rem);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+ul.mah-list-no-style.mah-list {
+  padding: 1rem;
+}
+
+ul.mah-list-no-style {
+  list-style: none;
+  padding: 1rem;
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0px;
+  font-size: 12px;
+  box-sizing: border-box;
+}
+ul.mah-list-no-style li {
+  box-sizing: border-box;
+  position: relative;
+}
+
+.admin-shortcut-trigger {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  text-align: center;
+  line-height: 1;
+  font-weight: 700;
+  background-color: darkred;
+  color: white;
+  font-size: 2rem;
+  border-radius: 0 50% 50% 0;
+  padding: 4px;
+  cursor: pointer;
+  transition: 0.3s linear all;
+  font-family: inherit;
+}
+.admin-shortcut-trigger span {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: linear-gradient(
+    -45deg,
+    darkred,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.3),
+    darkred
+  );
+  color: #fff;
+}
+
+.admin-shortcut-trigger.hide {
+  transform: translateX(-100%);
+  transition: 0.3s linear all;
+}
+
+.mah-admin-shortcut div {
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
+}
+.mah-admin-shortcut * {
+  font-family: inherit;
+  font-size: 12px;
+}
+.mah-admin-shortcut {
+  position: fixed;
+  left: 0;
+  top: 50%;
+  background-color: black;
+  color: #f5f5f5;
+  width: 200px;
+  padding: 2rem 1rem;
+  transform: translate(-100%, -50%);
+  transition: 0.3s linear all;
+  z-index: 10;
+  border-radius: 0 10px 10px 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-family: inherit;
+}
+.mah-admin-shortcut.active {
+  transform: translate(0, -50%);
+  transition: 0.3s linear all;
+}
+
+.mah-admin-shortcut.hide {
+  display: none;
+}
+
+.mah-admin-shortcut ul {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.mah-admin-shortcut li {
+  width: 100%;
+  margin-bottom: 8px;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+}
+.mah-admin-shortcut li a {
+  width: 100%;
+  display: block;
+  color: white;
+}
+.mah-admin-shortcut li:hover a {
+  color: darkred;
+}
+
+.admin-shortcut-close {
+  background-color: var(--color-accent-1);
+  color: var(--color-light-1);
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #f5f5f5;
+}
+
+.mah-admin-shortcut.active li a {
+  color: white;
+}
+.mah-admin-shortcut.active li:hover a {
+  color: red;
+}
+
+/**
+=========================
+* oxygen styles
+*=========================
+*/
+
+#mah-oxy-fp-inner.mah-hide {
+  visibility: hidden;
+  transform: translateX(calc(-100% - 2rem));
+  z-index: -1;
+  opacity: 0;
+}
+#mah-oxy-fp-inner.mah-show {
+  visibility: visible;
+  transform: translateX(0);
+  z-index: 10;
+  opacity: 1;
+  transition: 0.3s linear all;
+}
+
+ul.mah-list-no-style.mah-oxy-fp-list {
+  margin: 0;
+  padding: 1rem;
+}
+
+/**
+=========================
+* Tools CSS
+*=========================
+*/
+div#mah-tools-fp-inner {
+  width: 300px;
+}
+.mah-toy {
+  width: 100%;
+}
+ul.mah-list-no-style.mah-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 8px;
+}
+ul.mah-list-no-style.mah-list li {
+  margin-bottom: 0;
+  display: flex;
+}
+span.mah-question-mark {
+  width: 13px;
+  height: 13px;
+  font-size: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #111111;
+  color: #f5f5f5;
+  padding: 4px;
+  border-radius: 50%;
+  position: absolute;
+  right: 4px;
+}
+/* ul.mah-list-no-style.mah-list li:after {
+  content: "\003F";
+  font-size: 9px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 10px;
+  height: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: seagreen;
+} */
+span.mah-tool-description {
+  position: absolute;
+  top: calc(-100% - 8px);
+  width: max-content;
+  background: darkgreen;
+  line-height: 1;
+  font-size: 10px;
+  padding: 8px;
+  border-radius: 5px;
+}
+span.mah-tool-description.mah-hide {
+  visibility: hidden;
+  transform: scale(0);
+  opacity: 0;
+  z-index: -1;
+}
+span.mah-tool-description.mah-show {
+  visibility: visible;
+  transform: scale(1);
+  opacity: 1;
+  z-index: 10;
+  transition: 0.3s linear all;
+}
+
+.mah-tools-trigger {
+  cursor: pointer;
+  width: 100%;
+  display: block;
+}
+.mah-tools-trigger:hover {
+  color: red;
+}
+
+#mah-tools-fp-inner {
+  right: -300px;
+  bottom: 100%;
+}
+
+#mah-tools-fp-inner.mah-hide {
+  transform: translateX(-100%);
+  z-index: -1;
+  visibility: hidden;
+}
+#mah-tools-fp-inner.mah-show {
+  transform: translateX(0);
+  z-index: 2;
+  visibility: visible;
+  transition: 0.3s linear all;
+}
+
+ul.mah-list-no-style.mah-tools-fp-list {
+  padding: 1rem;
+  width: 100%;
+}
+
+/**
+=========================
+* Mah referece styles
+*=========================
+*/
+
+.mah-ref-trigger:hover {
+  color: red;
+}
+#mah-ref {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#mah-ref.mah-hide {
+  visibility: hidden;
+  opacity: 0;
+  z-index: -1;
+  width: 0;
+  height: 0;
+  transform: scale(0);
+}
+#mah-ref.mah-show {
+  z-index: 20;
+  visibility: visible;
+  opacity: 1;
+  width: 100vw;
+  height: 100vh;
+  transform: scale(1);
+  transition: 0.3s linear all;
+}
+
+.mah-ref-wr {
+  width: 540px;
+  max-width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #333;
+  color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.mah-ref-close {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -50%);
+  background-color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.mah-ref-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 8px;
+}
+
+button#mah-button,
+input#mah-search {
+  box-sizing: border-box;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+}
+button#mah-button {
+  background-color: black;
+  color: #f5f5f5;
+}
+button#mah-button a {
+  color: #f5f5f5;
+  width: 100%;
+  display: block;
+}
+button#mah-button a:hover {
+  color: red;
+}
+
+/**
+=========================
+* Mah Edit Oxygen Templage
+*=========================
+*/
+li.mah-edit-oxy-template {
+  position: relative;
+}
+
+.mah-oxy-edit-template-wr {
+  position: absolute;
+  background-color: #111111;
+  right: -100%;
+  top: -16px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.mah-oxy-edit-template-wr.mah-hide {
+  visibility: hidden;
+  width: 0;
+  opacity: 0;
+  z-index: -1;
+  transform: scale(0);
+}
+
+.mah-oxy-edit-template-wr.mah-show {
+  visibility: visible;
+  width: 100%;
+  opacity: 1;
+  z-index: 10;
+  transform: scale(1);
+  transition: 0.3s linear all;
+}
+
+li.mah-edit-oxy-template:hover
+  ul.mah-list-no-style.mah-oxy-edit-template-list
+  li
+  a {
+  color: green;
+}
+
+ul.mah-list-no-style.mah-oxy-edit-template-list {
+  padding: 1rem;
+}
+
+ul.mah-list-no-style.mah-oxy-edit-template-list li a {
+  color: green;
+}
+ul.mah-list-no-style.mah-oxy-edit-template-list li a:hover {
+  color: #f5f5f5 !important;
+}
+
+/**
+=========================
+* SEO
+*=========================
+*/
+#mah-seo-wr {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.mah-seo-trigger {
+  background-color: orangered;
+  padding-left: 8px;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 10px;
+}
+
+#mah-seo-inner {
+  width: 100%;
+}
+
+ul.mah-list-no-style.mah-list.mah-seo-list {
+  width: 100%;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(calc(168px / 2 - 8px), 1fr));
+  gap: 8px;
+}
+ul.mah-list-no-style.mah-list.mah-seo-list li {
+  border: none;
+}
+ul.mah-list-no-style.mah-list.mah-seo-list li a {
+  background-color: #333;
+  border-radius: 5px;
+  padding: 4px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: green;
+  transition: 0.3s linear all;
+  font-size: 10px;
+}
+
+ul.mah-list-no-style.mah-list.mah-seo-list li a:hover {
+  transform: translateY(-2px);
+  transition: 0.3s linear all;
+  color: greenyellow;
+}
+
+/* check index */
+a.mah-cek-index-link {
+  font-size: 10px;
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  line-height: 1;
+  background-color: darkred;
+  color: #f5f5f5;
+  padding: 2px 4px;
+  z-index: 3;
+}

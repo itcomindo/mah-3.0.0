@@ -1,0 +1,206 @@
+#mahad-trigger-box {
+  width: 250px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  background-color: black;
+  color: white;
+  padding: 1rem;
+}
+
+#mahad-trigger-box div,
+#mahad-trigger-box ul,
+#mahad-trigger-box a {
+  box-sizing: border-box;
+}
+
+ul.mahad-trigger-box-list {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+ul.mahad-trigger-box-list li {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.2;
+  margin: 0;
+  padding: 6px 3px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+ul.mahad-trigger-box-list li.mahad-show-box {
+  grid-column: 1 / span 3;
+  background-color: darkred;
+}
+ul.mahad-trigger-box-list li.mahad-run-formater {
+  background-color: darkcyan;
+}
+
+ul.mahad-trigger-box-list li.mahad-run-text-casing {
+  background-color: darkmagenta;
+}
+
+ul.mahad-trigger-box-list li.mahad-run-entity {
+  background-color: darkgreen;
+}
+
+ul.mahad-trigger-box-list li.mahad-run-prism {
+  background-color: darkorange;
+}
+ul.mahad-trigger-box-list li.mahad-run-filter {
+  background-color: darkolivegreen;
+}
+/**
+=========================
+* Mahad Container
+* @todo mahad-container
+*=========================
+*/
+.mahad-container div,
+.mahad-container ul,
+.mahad-container li,
+.mahad-container textarea,
+.mahad-container input,
+.mahad-container label,
+.mahad-container a {
+  box-sizing: border-box;
+}
+.mahad-container {
+  z-index: 10000000;
+  position: absolute;
+  left: calc(50% - 270px);
+  top: 10rem;
+  background-color: black;
+  color: white;
+  width: 540px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+  transition: 0.3s linear transform;
+}
+/* .mahad-container.mahad-play {
+  transform: unset;
+  top: unset;
+  left: unset;
+} */
+
+.mahad-container.mahad-hide {
+  transform: scale(0);
+  z-index: -1;
+  transition: 0.3s linear all;
+}
+.mahad-container.mahad-show {
+  transform: scale(1);
+  z-index: 100;
+}
+
+.mahad-close {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: darkred;
+  color: white;
+  position: absolute;
+  right: 0;
+  top: -30px;
+}
+
+.mahad-inner {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.mahad-item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.mahad-item textarea,
+.mahad-item input {
+  width: 100%;
+  padding: 8px;
+}
+
+button.mahad-button {
+  box-sizing: border-box;
+  width: max-content;
+  line-height: 1;
+  margin: 4px 0 0 0;
+  padding: 6px 3rem;
+}
+
+/**
+=========================
+* Command
+* @todo mahad-command
+*=========================
+*/
+
+.mahad-command-box {
+  font-size: 10px;
+  background-color: #333;
+  color: white;
+  z-index: 100;
+  padding: 8px;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+ul.mahad-formater-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(75px, 1fr));
+  gap: 8px;
+}
+
+ul.mahad-formater-list li {
+  padding: 6px;
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  text-align: center;
+  line-height: 1.1;
+  margin: 0;
+}
+
+/**
+=========================
+* CF Fields Style
+* @todo CF Fields Style
+*=========================
+*/
+.mah-sep {
+  background-color: #121212;
+  color: #f5f5f5;
+}
+.mah-sep h3 {
+  font-size: 16px;
+  line-height: 1.1;
+  margin: 4px 0;
+  color: #f5f5f5;
+}
+
+.mah-sep-child {
+  background-color: darkred;
+  color: #f5f5f5;
+}
+.mah-sep-child h3 {
+  font-size: 14px;
+  line-height: 1.1;
+  margin: 2px 0;
+  color: #f5f5f5;
+}
