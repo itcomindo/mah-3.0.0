@@ -1,0 +1,20 @@
+#wpcb-tfs {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  width: 40px;
+  height: 40px;
+  background-color: #f44336;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 25px;
+  color: white;
+  font-size: 30px;
+}
+
+.wpcb-theme-dark .list-container.hide {
+  display: none !important;
+}
