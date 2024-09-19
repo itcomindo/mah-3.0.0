@@ -349,6 +349,7 @@ require_once MAH_PATH . 'shortcuts/shortcuts.php';
 require_once MAH_PATH . 'components/components.php';
 require_once MAH_PATH . 'systems/systems.php';
 require_once MAH_PATH . 'wpcb/wpcb.php';
+require_once MAH_PATH . 'pages/pages.php';
 require_once 'mah-tools.php';
 require_once 'mah-references.php';
 require_once 'mah-seo-tools.php';
