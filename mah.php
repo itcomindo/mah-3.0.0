@@ -13,7 +13,7 @@
  * Tested up to: 5.8
  * Requires PHP: 7.0
  * WC requires at least: 3.0
- * Version: 3.0.0
+ * Version: 4.0.0
  *
  * @package mah
  */
